@@ -1,0 +1,1926 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../collection_playlists/">
+      
+      
+        <link rel="next" href="../copy_playlists/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Combine Playlists With Boolean Algebra - DJ Tools</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../css/mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#combine-playlists-with-boolean-algebra" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DJ Tools" class="md-header__button md-logo" aria-label="DJ Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DJ Tools
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Combine Playlists With Boolean Algebra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/a-rich/DJ-Tools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DJ Tools" class="md-nav__button md-logo" aria-label="DJ Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DJ Tools
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/a-rich/DJ-Tools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Collection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Collection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collection_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Playlists From Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Combine Playlists With Boolean Algebra
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Combine Playlists With Boolean Algebra
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-combine-playlists-with-boolean-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why combine playlists with boolean algebra?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-string-selectors-can-take-two-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date string selectors can take two forms:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lets-look-at-an-example-playlist-to-see-how-the-syntax-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Let's look at an example playlist to see how the syntax works.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Templating
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-its-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it's done
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copy_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copy Tracks From Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shuffle_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shuffle Tracks in Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Spotify
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Spotify
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reddit_spotify_api_access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Reddit & Spotify API Access
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spotify_playlist_from_upload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Spotify Playlists From Other Users' Uploads
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spotify_playlist_from_reddit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Spotify Playlists From Reddit Posts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sync
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Sync
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup_object_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Object Storage For Syncing Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sync_beatcloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync Files with the Beatcloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sync_spotify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync Tracks From Spotify Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Utils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check_beatcloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Check the Beatcloud for Tracks in Spotify Playlists or Local Directories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extract_from_url/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extract Audio Files From URLs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../process_recordings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Process Recorded Files Using Spotify Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standardize_audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standardize Audio Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conceptual Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Conceptual Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conceptual_guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conceptual_guides/rekordbox_collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get to Know Your Rekordbox Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conceptual_guides/tagging_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tagging Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conceptual_guides/file_standardization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Importance of Standardization and Quality Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/configs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/spotify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spotify
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/sync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developer Docs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/system_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/new_collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding DJ Software Support to the Collections Package
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/collections_api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Collections API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/playlist_filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding Custom PlaylistFilters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-combine-playlists-with-boolean-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why combine playlists with boolean algebra?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-string-selectors-can-take-two-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date string selectors can take two forms:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lets-look-at-an-example-playlist-to-see-how-the-syntax-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Let's look at an example playlist to see how the syntax works.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Templating
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-its-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it's done
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="combine-playlists-with-boolean-algebra">Combine Playlists with Boolean Algebra</h1>
+<p>In this guide you will learn how to automatically build playlists based off of powerful boolean algebra expressions that apply set operations to tags, playlists, and other selections of your Collection.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><a href="../../tutorials/getting_started/setup/#rekordbox-settings">Rekordbox settings</a></li>
+<li><a href="../../conceptual_guides/rekordbox_collection/">Get to Know Your Rekordbox Collection</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Set_theory#Basic_concepts_and_notation">A light review of set theory</a></li>
+</ul>
+<h2 id="why-combine-playlists-with-boolean-algebra">Why combine playlists with boolean algebra?</h2>
+<p>It may not be commonly known, but Rekordbox already has a very elementary version of this functionality called the "Track Filter":
+<img alt="alt text" src="../../images/Rekordbox_track_filter.png" title="Rekordbox Track Filter" /></p>
+<p>There are many shortcomings with the Track Filter which make it far inferior to the <a class="autorefs autorefs-internal" href="../../reference/collection/#djtools.collection.helpers.build_combiner_playlists">Combiner</a>:</p>
+<ol>
+<li>Portability<ul>
+<li>can only be used on a laptop running Rekordbox (not available on XDJs, CDJs, etc.)</li>
+<li>can only be used with the master database on a laptop (friends plugging in their devices lose access to this feature)</li>
+</ul>
+</li>
+<li>Operands<ul>
+<li>only works on <code>My Tags</code>, color, rating, key, and a maximum of 6% range from a single BPM value</li>
+</ul>
+</li>
+<li>Operators<ul>
+<li>can only apply <code>AND</code> and <code>OR</code> logic</li>
+<li>can only apply logic to <code>My Tags</code></li>
+<li>can only apply one of these logic operators per grouping of <code>My Tags</code></li>
+</ul>
+</li>
+</ol>
+<p>The <code>Combiner</code> solves all these issues in the following ways:</p>
+<ol>
+<li>Portability<ul>
+<li>generates regular playlists which can be exported to a device for use on any system</li>
+</ul>
+</li>
+<li>Operands<ul>
+<li>works on any tag data that <code>djtools</code> knows of (e.g. genres, <code>My Tags</code>, etc.)</li>
+<li>includes numerical selector syntax to choose arbitrary rating, BPM, and year values as well as arbitrary ranges of those values</li>
+<li>includes string selector syntax to choose playlists in your Collection as well as artists, comments, dates added, keys, and record labels</li>
+<li>any of the string selectors (except for <code>date</code>) support wildcard globbing with the <code>*</code> character</li>
+</ul>
+</li>
+<li>Operators<ul>
+<li>adds a <code>NOT</code> operator to take the set difference</li>
+<li>allows you to apply logic operators to <em>any</em> of the operands, not just <code>My Tags</code></li>
+<li>allows you to construct arbitrarily complex expressions using parentheses to control the order of operations</li>
+</ul>
+</li>
+</ol>
+<h2 id="syntax">Syntax</h2>
+<ul>
+<li>logical operators ("AND", "OR", "NOT"):<ul>
+<li><code>&amp;</code></li>
+<li><code>|</code></li>
+<li><code>~</code></li>
+</ul>
+</li>
+<li>string selectors (not case-sensitive):<ul>
+<li><code>{artist:*Eprom*}</code></li>
+<li><code>{comment:*hollaback*}</code></li>
+<li><code>{date:2022}</code></li>
+<li><code>{date:&gt;2021-10-05}</code></li>
+<li><code>{date:&lt;=2020-05}</code></li>
+<li><code>{date:1y}</code></li>
+<li><code>{date:&gt;=3m}</code></li>
+<li><code>{date:&lt;10w5d}</code></li>
+<li><code>{key:7A}</code></li>
+<li><code>{label:duploc}</code></li>
+<li><code>{playlist: Deep House}</code></li>
+</ul>
+</li>
+<li>numerical selectors:<ul>
+<li><code>[0]</code></li>
+<li><code>[3-5]</code></li>
+<li><code>[80]</code></li>
+<li><code>[130-150]</code></li>
+<li><code>[1973]</code></li>
+<li><code>[2013-2023]</code></li>
+</ul>
+</li>
+<li>grouping:<ul>
+<li><code>(</code></li>
+<li><code>)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="date-string-selectors-can-take-two-forms">Date string selectors can take two forms:</h3>
+<ol>
+<li>ISO format date strings e.g. <code>2024-06-22</code>, <code>2024-06</code>, <code>2024</code></li>
+<li><code>ymwd</code> (year, month, week, day) format timedelta strings e.g. <code>1y</code>, <code>3m2w</code>, <code>5d</code></li>
+</ol>
+<p>Here's how playlists can be built using the different date string selector types using the examples from above.
+- <code>{date:2022}</code>: tracks added in the year 2022
+- <code>{date:&gt;2021-10-05}</code>: track added after October 5th, 2021
+- <code>{date:&lt;=2020-05}</code>: tracks added on or before May, 2020
+- <code>{date:1y}</code>: tracks added exactly 1 year ago today
+- <code>{date:&gt;=3m}</code>: tracks added within the last 3 months
+- <code>{date:&lt;10w5d}</code>: tracks at least 75 days old</p>
+<h3 id="lets-look-at-an-example-playlist-to-see-how-the-syntax-works">Let's look at an example playlist to see how the syntax works.</h3>
+<p>Suppose we want a playlist with tracks that <em>all have</em> the following properties:</p>
+<ul>
+<li>from the years 2000 to 2023</li>
+<li>and have a rating of 5</li>
+<li>and with BPMs in the range 130 to 150</li>
+</ul>
+<p>The expression will look this:</p>
+<pre><code>[2000-2023] &amp; [5] &amp; [130-150]
+</code></pre>
+<p>Now let's say we want a playlist with tracks that have <em>any one of</em> the following properties:</p>
+<ul>
+<li>have a genre tag called "Jungle"</li>
+<li>or have another tag called "Dark"</li>
+<li>or come from a playlist called "New Years 1999"</li>
+<li>or come from the record label "Dispatch"</li>
+</ul>
+<p>The playlist for this set of tracks is expressed like this:</p>
+<pre><code>Jungle | Dark | {playlist: New Years 1999} | {label: Dispatch}
+</code></pre>
+<p>Now let's say we want to create a playlist using the other supported string selectors. We're also going to demonstrate the set difference operator <code>~</code> which will remove matching tracks from the resulting playlist. This subset of tracks will <em>all have</em> the following properties:</p>
+<ul>
+<li>have at least one of the artists as "Eprom"</li>
+<li>and have been added to the collection after 2010</li>
+<li>and have the words "absolute banger" in the comments</li>
+<li>and not have a major musical key (using <a href="https://mixedinkey.com/harmonic-mixing-guide/">Camelot notation</a>)</li>
+</ul>
+<p>The playlist for these tracks is written like this:</p>
+<pre><code>{artist: *Eprom*} &amp; {date:&gt;2010} &amp; {comment:*absolute banger*} ~ {key:*A}
+</code></pre>
+<p>Finally, let's see how we can create one master playlist from all three of these sub-expressions using groupings to ensure the proper order of operations:</p>
+<pre><code>([2000-2023] &amp; [5] &amp; [130-150]) |
+(Jungle | Dark | {playlist: New Years 1999} | {label: Dispatch}) |
+({artist: *Eprom*} &amp; {date:&gt;2010} &amp; {comment:*absolute banger*} ~ {key:*A})
+</code></pre>
+<p>I hope you see how powerful the <code>Combiner</code> can become when used with a well indexed collection!</p>
+<h2 id="templating">Templating</h2>
+<p>Once the potential of these Combiner playlists is realized, you might find your <code>collection_playlists.yaml</code> starting to become unwieldy with many nested folders of repetitive expressions.
+For this reason, <code>djtools</code> supports templating out your playlist config's substructures using <a href="https://jinja.palletsprojects.com/en/3.1.x/">Jinja</a>.
+<code>djtools</code> looks for a Jinja template located at <code>configs/playlist_templates/collection_playlists.j2</code> and uses it to build a <code>collection_playlist.yaml</code> at runtime.
+With templating, I've replaced manually maintaining a 2,300 line <code>collection_playlists.yaml</code> file with a 300 line <code>collection_playlists.j2</code>!</p>
+<p>Here's an example of my <code>configs</code> directory:</p>
+<pre><code>.
+├── collection_playlists.yaml
+├── config.yaml
+├── playlist_templates
+│   ├── collection_playlists.j2
+│   └── macros.j2
+└── spotify_playlists.yaml
+</code></pre>
+<p>I've decided to keep the patterns I commonly use in my playlists in the <code>macros.j2</code> file and import them into my <code>collection_playlists.js2</code>.
+Here's what my <code>macros.j2</code> looks like:</p>
+<pre><code>{%- macro Vibes(var, name='') %}
+{%- set vibes = [
+  &quot;Aggro&quot;, &quot;Atmospheric&quot;, &quot;Bounce&quot;, &quot;Dark&quot;, &quot;Deep&quot;, &quot;Gangsta&quot;, &quot;Groovy&quot;,
+  &quot;Heavy&quot;, &quot;Hypnotic&quot;, &quot;Melancholy&quot;, &quot;Melodic&quot;, &quot;Rave&quot;, &quot;Strange&quot;, &quot;Uplifting&quot;
+] -%}
+
+name: {{ name if name else var }}
+playlists:
+  {%- for vibe in vibes %}
+  - name: {{ vibe }}
+    tag_content: &quot;{{ var }} &amp; {{ vibe }}&quot;
+  {%- endfor %}
+{%- endmacro %}
+
+{%- macro Genres(var, name='') %}
+{%- set genres = [
+    {&quot;name&quot;: &quot;140ish Bass&quot;, &quot;tag&quot;: &quot;([130-150] &amp; {playlist:All Bass})&quot;},
+    {&quot;name&quot;: &quot;4/4&quot;, &quot;tag&quot;: &quot;({playlist:All House} | {playlist:All Techno} | {playlist:All Trance} | {playlist:Midtempo})&quot;},
+    {&quot;name&quot;: &quot;Breakbeat &amp; Garage&quot;, &quot;tag&quot;: &quot;({playlist:All Breakbeat} | {playlist:All Garage})&quot;},
+    {&quot;name&quot;: &quot;DnB&quot;, &quot;tag&quot;: &quot;{playlist:All DnB}&quot;},
+    {&quot;name&quot;: &quot;Hip Hop Beats (slow)&quot;, &quot;tag&quot;: &quot;([6-119] &amp; {playlist:All Hip Hop Beats})&quot;},
+    {&quot;name&quot;: &quot;Hip Hop Beats (fast)&quot;, &quot;tag&quot;: &quot;([120-999] &amp; {playlist:All Hip Hop Beats})&quot;},
+    {&quot;name&quot;: &quot;Other Bass&quot;, &quot;tag&quot;: &quot;({playlist:All Bass} ~ [130-150] ~ {playlist:All DnB} ~ {playlist:All Hip Hop Beats})&quot;},
+    {&quot;name&quot;: &quot;Everything Else&quot;, &quot;tag&quot;: &quot;({playlist:All Bass} | {playlist:All Breakbeat} | {playlist:All Garage} | {playlist:All House} | {playlist:Midtempo} | {playlist:All Techno} | {playlist:All Trance})&quot;}
+] -%}
+
+name: {{ name if name else var }}
+playlists:
+  {%- for genre in genres %}
+  - name: {{ genre.name }}
+    tag_content: &quot;{{ var }} &amp; {{ genre.tag }}&quot;
+  {%- endfor %}
+{%- endmacro %}% 
+</code></pre>
+<p>To demonstrate how I'm using macros, I'm including a sample of my <code>collection_playlists.j2</code> -- note the use of the <code>|indent</code> filter to ensure the macros indent the content filled by the macros in order to produce valid YAML:</p>
+<pre><code>{%- import 'macros.j2' as macros -%}
+
+combiner:
+  name: Combinations
+  playlists:
+    - name: Genre Vibes
+      playlists:
+        - name: DnB
+          playlists:
+            - {{ macros.Vibes(&quot;All DnB&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Darkstep&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Halftime&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Jungle&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Liquid Funk&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Minimal DnB&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Neurofunk&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Techstep&quot;)|indent(14) }}
+        - name: Techno
+          playlists:
+            - {{ macros.Vibes(&quot;All Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Pure Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Acid Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Hard Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Hardstyle&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Industrial Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Melodic Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Minimal Deep Tech&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Minimal Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Psytechno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Techno&quot;)|indent(14) }}
+            - {{ macros.Vibes(&quot;Tech Trance&quot;)|indent(14) }}
+    - name: Vibes
+      playlists:
+        - {{ macros.Genres(&quot;Aggro&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Atmospheric&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Bounce&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Dark&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Deep&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Gangsta&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Groovy&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Heavy&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Hypnotic&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Melancholy&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Melodic&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Rave&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Strange&quot;)|indent(10) }}
+        - {{ macros.Genres(&quot;Uplifting&quot;)|indent(10) }}
+</code></pre>
+<h2 id="how-its-done">How it's done</h2>
+<ol>
+<li>Configure your desired playlists for the <code>Combiner</code> by constructing a boolean algebra expression with the syntax noted above</li>
+<li>Run the command <code>--collection-playlists</code></li>
+<li>Import the <code>PLAYLIST_BUILDER</code> folder from the generated collection</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>As is done in the <a href="../collection_playlists/#example">Build Playlists From Tags</a> how-to guide, we'll start by looking at some simple expressions configured in the pre-packaged <a href="https://github.com/a-rich/DJ-Tools/blob/main/tests/data/collection_playlists.yaml">collection_playlists.yaml</a>, but this time we'll focus only on the <code>combiner</code> section:</p>
+<p>Note that the examples below are trivial ones designed to get 100% code coverage in unit tests.</p>
+<p><img alt="alt text" src="../../images/Rekordbox_playlists_combiner_yaml.png" title="Collection playlists YAML" /></p>
+<p>The <code>combiner</code> configuration specifies a set of <code>name</code> folders with lists of playlists and / or folders inside of them. The leaves of this playlist tree are the actual playlists themselves whose names are boolean algebra expressions that use the syntax noted above to describe how different tags and selectors are to be combined to produce the final playlist of tracks. Valid expressions must contain at least two operands and must have one less operator than there are operands. </p>
+<p>Note that, as with the tag playlists, you may provide an override for these playlist names.
+This can be really helpful since combiner playlists can otherwise have very long names.
+Here's an example of configuring a playlist name override:</p>
+<pre><code>    - tag_content: &quot;Dubstep &amp; {date:&lt;2022} &amp; [5]&quot;
+      name: Pre 2022 High Energy Dubstep
+</code></pre>
+<p>Also note that combiner playlists, like tag playlists, have <code>PlaylistFilter</code> logic and recursive track aggregation applied to them.</p>
+<p>Once you've finalized your playlist configuration, run the following command to build the playlists:</p>
+<p><code>djtools --collection-playlists</code></p>
+<p>Now you can import the <code>PLAYLIST_BUILDER</code> folder to load these playlists into your Collection:
+<img alt="alt text" src="../../images/Rekordbox_post_playlists_combiner.png" title="Generated combiner playlists" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

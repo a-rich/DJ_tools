@@ -1,0 +1,1854 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../rekordbox_collection/">
+      
+      
+        <link rel="next" href="../file_standardization/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Tagging Guide - DJ Tools</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../css/mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tagging-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DJ Tools" class="md-header__button md-logo" aria-label="DJ Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DJ Tools
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tagging Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/a-rich/DJ-Tools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DJ Tools" class="md-nav__button md-logo" aria-label="DJ Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DJ Tools
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/a-rich/DJ-Tools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/getting_started/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Collection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Collection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/collection_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Playlists From Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/combiner_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combine Playlists With Boolean Algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/copy_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copy Tracks From Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/shuffle_playlists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shuffle Tracks in Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Spotify
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Spotify
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/reddit_spotify_api_access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Reddit & Spotify API Access
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/spotify_playlist_from_upload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Spotify Playlists From Other Users' Uploads
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/spotify_playlist_from_reddit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Spotify Playlists From Reddit Posts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sync
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Sync
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/setup_object_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Object Storage For Syncing Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/sync_beatcloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync Files with the Beatcloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/sync_spotify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync Tracks From Spotify Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Utils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/check_beatcloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Check the Beatcloud for Tracks in Spotify Playlists or Local Directories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/extract_from_url/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extract Audio Files From URLs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/process_recordings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Process Recorded Files Using Spotify Playlists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_guides/standardize_audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standardize Audio Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conceptual Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Conceptual Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rekordbox_collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get to Know Your Rekordbox Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tagging Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Tagging Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tip-1-know-what-metadata-fields-are-available-to-you" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip #1: Know what metadata fields are available to you
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip-2-prune-your-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip #2: Prune your library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip-3-identify-golden-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip #3: Identify "golden tracks"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specific-tagging-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specific Tagging Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specific Tagging Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#genre-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genre tags
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Genre tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find-a-useful-middle-ground-regarding-the-specificity-of-your-genre-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find a useful middle-ground regarding the specificity of your genre tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-let-perfect-get-in-the-way-of-good" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't let perfect get in the way of good
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Other" tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratings-as-energy-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratings as Energy Levels
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_standardization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Importance of Standardization and Quality Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/configs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/spotify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spotify
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/sync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developer Docs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/system_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/new_collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding DJ Software Support to the Collections Package
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/collections_api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Collections API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_docs/playlist_filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding Custom PlaylistFilters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tip-1-know-what-metadata-fields-are-available-to-you" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip #1: Know what metadata fields are available to you
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip-2-prune-your-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip #2: Prune your library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip-3-identify-golden-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tip #3: Identify "golden tracks"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specific-tagging-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specific Tagging Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specific Tagging Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#genre-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genre tags
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Genre tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find-a-useful-middle-ground-regarding-the-specificity-of-your-genre-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find a useful middle-ground regarding the specificity of your genre tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-let-perfect-get-in-the-way-of-good" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't let perfect get in the way of good
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Other" tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratings-as-energy-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ratings as Energy Levels
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tagging-guide">Tagging Guide</h1>
+<p>In this guide, I'll be offering opinions, tips, and best-practices for tagging your collection.</p>
+<p>Having indexed and re-indexed my collection of thousands of tracks several times already, there are a handful of things I wish I knew from the beginning that could have saved me a few passes through my library.</p>
+<p>I'll begin with three general tips that should be applicable regardless of what types of tagging you're doing.
+I'll then go over tips grouped by the more specific types of tags such as genres, ratings, and "other" tags.</p>
+<h2 id="general-tips">General Tips</h2>
+<h3 id="tip-1-know-what-metadata-fields-are-available-to-you">Tip #1: Know what metadata fields are available to you</h3>
+<p>Before embarking on a potentially multi-month journey to index your collection, make sure you're aware of all the ways you can attach information to your tracks.
+The worst time to realize you could have been using a particular field to encode information is after you've finished applying a process to your entire collection.</p>
+<p>Look over each column and determine if you have a purpose (or repurpose) for that information. In, for example, the Rekordbox library view, all the available fields can have their visibility toggled by right-clicking on the column headers.</p>
+<p>Build a plan for what information is valuable to you both while preparing and executing mixes and keep this plan in mind while applying your processes.
+Remember that some information may not always be available to you.
+For example, I once applied a hot cue schema to all my tracks before realizing that older CDJs only have access to the first three hot cues.
+I then had to go through all my tracks and reorder the hot cues so the three most practical cue points filled the A, B, and C hot cue positions.</p>
+<p>Look through the full set of preferences for your library management software and make sure you're maximizing your ability to capture useful information.
+In Rekordbox, if you want <code>djtools</code> to be able to build playlists from your <code>My Tags</code> data, or if you want to be able to search <code>My Tag</code> data on CDJs, you must enable the setting <code>Add "My Tags" to the "Comments"</code>.
+Please see the <a href="../../tutorials/getting_started/setup/#writing-my-tag-data-to-the-comments-field">setup guide</a> for more info.</p>
+<p><code>NOTE:</code>
+You should be applying your findings from <code>Tip #1</code> while executing on <code>Tip #2</code> and <code>Tip #3</code>.
+By incubating on your plans for tagging while scanning through your collection, you may find ways to improve those plans before you even start tagging.</p>
+<h3 id="tip-2-prune-your-library">Tip #2: Prune your library</h3>
+<p>Attempting to apply all your tags to your entire collection in one shot may sound like a good plan, but it's likely going to lead to you needing to re-tag your collection for one reason or another.
+You also might find that some types of tagging processes are much easier to do after you've already completed another tagging process.</p>
+<p>Before tagging, I recommend doing a quick pass through your whole collection and copy tracks that you may want to consider deleting into a <code>DELETE</code> playlist.
+Even if you don't end up deleting anything, it can be a useful exercise to critically assess the value each track has.
+If you do end up deleting stuff, then you'll have an easier time applying tags.</p>
+<p>There are multiple reasons why you may want to mark a track for deletion:</p>
+<ul>
+<li>track duration is too short to be practical -- yeah it's dope, but are you really gonna mix that 40 second beat?</li>
+<li>track is well outside your mixing style -- I love Pink Floyd too, but you'll probably never mix Comfortably Numb into your DnB sets</li>
+<li>that low quality rip from YouTube may have seemed like a good addition while you were obsessed with having that track, but now it just sounds horrible</li>
+</ul>
+<h3 id="tip-3-identify-golden-tracks">Tip #3: Identify "golden tracks"</h3>
+<p>While doing this preliminary pruning scan, also copy exceptional tracks into a <code>Golden Tracks</code> playlist.
+Think of this playlist as a testbed where you can try out your schemas on a batch of diverse tracks that are practical and you enjoy mixing.
+Detecting a deficiency in your schemas early on in this playlist will save you a bunch of time. </p>
+<p>For your <code>Golden Tracks</code> playlist to be effective for this purpose, it must be representative of your library, meaning it should have enough samples from each of the different corners of your collection.
+I recommend adding songs that you either have an exceptional fondness of, are relatively unique in style and character, or you feel contribute significantly towards defining your mixing style.
+Don't confuse this as a <code>My Favorites</code> playlist -- your taste in music changes over time.
+The most critical property of <code>Golden Tracks</code> is that it's diverse!
+Ideally, the contents of the playlist will force you to increase the scope of your schemas.</p>
+<p>Of course, what your <code>Golden Tracks</code> playlist looks like depends on multiple factors such as the maturity, size, and diversity of your collection.
+If you have a massive collection comprised of many different styles, your <code>Golden Tracks</code> playlist should capture those styles and it might be a large playlist with hundreds of tracks.
+Conversely, if your have a small and very homogenous library, your <code>Golden Tracks</code> might as well be your entire library. But, if this is the case, you're probably not interested in tagging your collection anyway.</p>
+<h2 id="specific-tagging-strategies">Specific Tagging Strategies</h2>
+<h3 id="genre-tags">Genre tags</h3>
+<h4 id="find-a-useful-middle-ground-regarding-the-specificity-of-your-genre-tags">Find a useful middle-ground regarding the specificity of your genre tags</h4>
+<p>You don't want your genre tags to be too specific or else you risk them loosing their value.
+If you're able to describe many of your tracks with a single genre tag, your genres are too specific.
+You'll end up with a bunch of genre playlists that have three tracks in them causing you to waste a bunch of time during the mix moving through different playlists.</p>
+<p>On the other hand, if your genre tags are too broad, you'll have genre playlists with many tracks that don't belong near each other which will lead to you wasting time previewing tracks that don't fit in the mix.</p>
+<p>You will definitely have tracks that you feel you can't distinguish with the genres you have.
+Don't forget that you can use "other" tags too.
+Trying to describe all the variance in your tracks with only genre tags is a mistake!
+Genre tags should be used for establishing macro groups in your library, not for completely capturing all the characteristics of each and every track.</p>
+<p><code>NOTE:</code>
+If you're a Rekordbox user, for <code>djtools</code> to be able to build playlists using genre tags, tracks with multiple genres must have those tags separated by forward slashes.</p>
+<h4 id="dont-let-perfect-get-in-the-way-of-good">Don't let perfect get in the way of good</h4>
+<p>It's easy to feel discouraged when trying to determine what genres you should use in your collection.
+Remember, this is an iterative learning process and you will almost certainly discover as you go what to call tracks you've collected.
+Again, this is why you want to have a <code>Golden Tracks</code> playlist so you can try out your ideas before you commit to them completely.</p>
+<p>Inevitably you'll find you made judgement errors when tagging and will have to go back and fix them.
+I finished tagging the genres of my collection years ago and I'm still occasionally finding tracks in playlists that feel out of place.
+That's the beauty of the playlist builder in <code>djtools</code>!
+Whenever you find an out of place track, correcting it is as easy as editing the tags for the track before rebuilding your playlists.</p>
+<h3 id="other-tags">"Other" tags</h3>
+<p>"Other" tags are any custom tags that don't fall under a pre-defined field (like "artist", "genre", etc.). In Rekordbox, these are called <code>My Tags</code>. </p>
+<p><code>NOTE:</code>
+For Rekordbox users' <code>My Tags</code> to be readable by <code>djtools</code> they must enable <code>Add "My Tags" to the "Comments"</code>.
+Don't worry, these setting works retroactively, so you don't need to worry about wasted effort if you've already tagged tracks without this setting enabled.
+Please see the <a href="../../tutorials/getting_started/setup/#writing-my-tag-data-to-the-comments-field">setup guide</a> for more info.</p>
+<p>Because "other" tags are user-defined and highly subjective, there's not a lot I can say about how they should be designed in general, but I can offer some insight about the specific tags I'm using and my experience establishing these as my tags.</p>
+<p>The group of <code>My Tags</code> that I've found the most useful are my "Vibes" tags.
+As the name suggests, these describe the prominent vibes of a track.
+Every track in my collection can be described by at least one of these but are often described by some combination of them.
+Some of the most vibe-rich tracks in my collection are described by as many as 8 of these:</p>
+<ul>
+<li>Aggro, Atmospheric, Bounce, Dark, Deep, Gangsta, Groovy, Heavy, Hypnotic, Melancholy, Melodic, Rave, Strange, Uplifting</li>
+</ul>
+<p>In terms of my process for establishing the "Vibes" tags, I experienced issues both with having too many tags and also not having enough tags.
+I would recommend to anyone doing something similar to error on the side having too many tags.
+It's very easy to find tracks with tags you want to get rid of and re-tag that subset.
+Comparatively, it's very difficult to find the tracks that ought to have a new tag you're wanting to introduce after the fact.
+This likely will lead to the need to again go through your entire collection to determine if a new tag is applicable.</p>
+<h3 id="ratings-as-energy-levels">Ratings as Energy Levels</h3>
+<p><code>djtools</code> parses the rating field as integers from <code>0</code> through <code>5</code> and the playlist builder permits users to express these as numerical selectors.
+In effect, you can target sections of your library by their energy level.
+For example, you can make a folder of House tracks grouped by low, medium, and high energy levels:</p>
+<pre><code>    - name: House Energies
+    playlists:
+        - name: Low
+          tag_content: &quot;House &amp; [1-2]&quot;
+        - name: Medium
+          tag_content: &quot;House &amp; [3]&quot;
+        - name: High
+          tag_content: &quot;House &amp; [4-5]&quot;
+</code></pre>
+<p>On my first attempt at encoding energy levels for my tracks, I made the mistake of scaling the energy level using my entire collection.
+As a result, tracks in genres that have higher energy levels (think "Brostep" or "Neurofunk") would all be 4 or 5 stars while tracks in genres that have lower energy levels (think "Ambient" or "Deep House") would all have 1 or 2 stars.</p>
+<p>On my second attempt at encoding energy levels, I had much more success using the genre tags to normalize energy levels.
+So the average "Deep House" track has 3 stars and the average "Brostep" track also has 3 stars.
+This way, when mixing, I can use the context of what style of music I'm mixing to interpret the energy level relative to other tracks that are likely to be mixed together.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p>I decided to cover genre, other, and rating tags here because they are the most useful fields for me.</p>
+<p>Keep the points made here in mind regardless of which fields you use for encoding information because tagging is inherently a time-consuming exercise and I believe these tips will help reduce wasted effort.</p>
+<p>Also, please consult the documentation on building <a href="../../how_to_guides/collection_playlists/">tag playlists</a> and <a href="../../how_to_guides/combiner_playlists/">Combiner playlists</a> to better understand how <code>djtools</code> uses your tracks' tags to automatically build playlists.
+It may help you in determining what schemas you want to apply to your library.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
